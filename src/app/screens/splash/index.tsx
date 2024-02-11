@@ -14,7 +14,7 @@ const Splash: ActivityComponentType = ({ params }) => {
 
   return (
     <AppScreen>
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center  w-full h-screen bg-cyan-200">
         <button onClick={onProfile}>profile</button>
         <button onClick={onBoarding}>onboarding</button>
       </div>

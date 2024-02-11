@@ -15,7 +15,7 @@ const WaitngRoom: ActivityComponentType = ({ params }) => {
 
   return (
     <AppScreen>
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center  w-full h-screen bg-cyan-200">
         <button onClick={endGame}>나가기</button>
         <button onClick={startGame}>게임 진행</button>
       </div>

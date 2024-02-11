@@ -14,7 +14,7 @@ const SelectGame: ActivityComponentType = ({ params }) => {
 
   return (
     <AppScreen>
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center  w-full h-screen bg-blue-300">
         <button onClick={startMbti}>mbti 진행하기</button>
         <button onClick={startSmallTalk}>small-talk 진행하기</button>
       </div>

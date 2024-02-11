@@ -11,7 +11,7 @@ const MainOnboarding: ActivityComponentType = ({ params }) => {
 
   return (
     <AppScreen>
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center  w-full h-screen bg-red-300">
         <button onClick={onClick}>메인화면으로</button>
       </div>
     </AppScreen>

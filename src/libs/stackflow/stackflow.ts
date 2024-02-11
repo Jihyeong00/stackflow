@@ -15,26 +15,27 @@ import SmallTalk2 from '@/app/screens/small-talk/smalltalk-2';
 import SmallTalk3 from '@/app/screens/small-talk/smalltalk-3';
 import Splash from '@/app/screens/splash';
 import WaitngRoom from '@/app/screens/wating-room';
+import { basicUIPlugin } from '@stackflow/plugin-basic-ui';
 
 export const { Stack, useFlow } = stackflow({
-  transitionDuration: 350,
-  activities: {
-    Main,
-    MainOnboarding,
-    Mbti1,
-    Mbti2,
-    Mbti3,
-    Onboarding1,
-    Onboarding2,
-    Onboarding3,
-    Profile,
-    SelectGame,
-    SmallTalk1,
-    SmallTalk2,
-    SmallTalk3,
-    Splash,
-    WaitngRoom,
-  },
-  plugins: [basicRendererPlugin()],
-  initialActivity: () => 'Splash',
+    transitionDuration: 350,
+    activities: {
+        Main,
+        MainOnboarding,
+        Mbti1,
+        Mbti2,
+        Mbti3,
+        Onboarding1,
+        Onboarding2,
+        Onboarding3,
+        Profile,
+        SelectGame,
+        SmallTalk1,
+        SmallTalk2,
+        SmallTalk3,
+        Splash,
+        WaitngRoom,
+    },
+    plugins: [basicRendererPlugin(), basicUIPlugin({ theme: 'cupertino' })],
+    initialActivity: () => 'Splash',
 });

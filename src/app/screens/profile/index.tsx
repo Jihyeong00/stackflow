@@ -18,7 +18,7 @@ const Profile: ActivityComponentType = ({ params }) => {
 
   return (
     <AppScreen>
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center w-full h-screen bg-blue-300">
         <button onClick={onMain}>프로필 설정 완료</button>
         <button onClick={onMainOnboarding}>메인 화면 소개 온보딩 보기</button>
         <button onClick={onBack}>온보딩 다시보기</button>
